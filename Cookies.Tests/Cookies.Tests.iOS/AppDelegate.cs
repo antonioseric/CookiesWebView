@@ -31,7 +31,7 @@ namespace Cookies.Tests.iOS
 
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            window.RootViewController = App.MainPage.CreateViewController();
+            window.RootViewController = new App().MainPage.CreateViewController();
 
             window.MakeKeyAndVisible();
 
